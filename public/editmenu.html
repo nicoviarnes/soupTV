@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Soup Menu</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link href="./styles.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="container fluid">
+      <h1 style="text-align: center;">Edit Menu</h1>
+      <div class="leftContainer" width="75%" style="float:left;">
+        <table class="table table-striped" width="100%">
+                <thead>
+                  <tr>
+                    <th scope="col">Soup Item</th>
+                    <th scope="col">Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="soupEditMenu">
+              </table>
+      </div>
+      <dv class="rightContainer" width="75%" style="float:right;">
+        <h2>Add a soup menu item</h2>
+        <div id="user-input">
+          <p>Enter soup name</p>
+          <input type="text" id="soupItem" placeholder="Soup menu item name" />
+          <p>Enter soup ingredients</p>
+          <input type="text" id="soupIngredients" placeholder="Soup menu item ingredients" />
+          <p>Enter soup price</p>
+          <input type="text" id="soupPrice" placeholder="Soup item price" />
+          <div id="buttons">
+            <div id="action-button">
+              <button id="addSoup">Submit</button>
+            </div>
+            <button id="clear-all">Delete All Soups</button>
+          </div>
+        </div>
+      </div>
+      <div id="results"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

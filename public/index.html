@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Soup Menu</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container fluid main">
+      <!-- <h1 id="soupTitle" style="text-align: center;">Today's Soups<br><span id="date"></span></h1> -->
+      <div class="uk-card">
+        <div class="menuheader18">
+          <h1>Today's Soup Menu <span>Oakland</span></h1>
+          <p>Feel free to ask for a taste!</p>
+          <hr width="350px" />
+          <table class="prices" width="350px">
+            <thead>
+              <tr>
+                <th scope="col">Half-Pint</th>
+                <th scope="col">Pint</th>
+                <th scope="col">Quart</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  $3.50
+                </td>
+                <td>
+                  $6.25
+                </td>
+                <td>
+                  $11.50
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr width="350px" />
+        </div>
+        <div id="date"></div>
+        <br />
+      </div>
+
+      <table class="table table-striped" width="100%">
+        <tbody id="soupMenu"></tbody>
+      </table>
+      <img width="100%" src="mhf.jpg" />
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
