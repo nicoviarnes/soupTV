@@ -59,7 +59,9 @@
 
 .main {
     border: 1rem solid #CCCC81;
-    margin-top: 15px;
+    margin: 15px auto;
+    width: 90%;
+    height: 100%;
 }
 
 .uk-card {
