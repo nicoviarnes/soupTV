@@ -57,11 +57,10 @@
     color: #48474a;
 }
 
-.main {
+.body {
     border: 1rem solid #CCCC81;
     margin: 15px auto;
-    width: 90%;
-    height: 100%;
+
 }
 
 .uk-card {
