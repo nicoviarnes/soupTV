@@ -6,6 +6,8 @@ var path = require("path");
 
 var app = express();
 
+var PORT = process.env.PORT || 3000;
+
 // Set the app up with morgan.
 // morgan is used to log our HTTP Requests. By setting morgan to 'dev'
 // the :status token will be colored red for server error codes,
@@ -24,7 +26,9 @@ var databaseUrl = "soupmenu";
 var collections = ["soups"];
 
 // Hook mongojs config to db variable
-var db = mongojs(databaseUrl, collections);
+//var db = mongojs(databaseUrl, collections);
+
+var db = process.env.MONGODB_URI || mongojs(databaseUrl, collections);
 
 // Log any mongojs errors to console
 db.on("error", function(error) {
@@ -152,6 +156,6 @@ app.get("/clearall", function(req, res) {
 });
 
 // Listen on port 3000
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log("App running on port 3000!");
 });
