@@ -88,8 +88,9 @@
 }
 
 .prices {
-  font-size: 40px;
+  font-size: 48px;
   letter-spacing: 1px;
+  text-align: center;
   color: #48474a;
   font-family: "arial narrow", sans-serif;
 }
