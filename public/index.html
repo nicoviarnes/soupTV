@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
-
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
     <link href="./styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -23,9 +23,11 @@
       <div class="uk-card">
         <div class="menuheader18">
           <h1>Today's Soup Menu <span>Oakland</span></h1>
+          <br />
           <p>Feel free to ask for a taste!</p>
+          <br />
           <hr width="350px" />
-          <table class="prices" width="350px">
+          <table class="prices" width="75%">
             <thead>
               <tr>
                 <th scope="col">Half-Pint</th>
@@ -50,15 +52,13 @@
           <hr width="350px" />
         </div>
         <div id="date"></div>
-        <br />
       </div>
 
       <table class="table table-striped">
         <tbody id="soupMenu"></tbody>
-
       </table>
-      <img width="100%" src="mhf.jpg" />
-      
+
+      <img id="mhfimg" src="mhf.jpg" />
     </div>
     <script src="app.js"></script>
   </body>

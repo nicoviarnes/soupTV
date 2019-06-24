@@ -23,12 +23,12 @@ function getResults() {
         );
         $("#soupMenu").append(
           `<tr class='data-entry' data-id=${data[i]._id}>
-            <td class="soup-name">${
+            <td class="soup-name" style="padding: 30px 30px 30px 30px">${
               data[i].soupItem
             }<br><p class="soup-ingredients">${data[i].soupIngredients}</p></td>
           </tr>`
         );
-        $("#date").text("Wednesday, May 8, 2019");
+        $("#date").text(moment().format("dddd, MMM Do, YYYY"));
       }
     }
   });

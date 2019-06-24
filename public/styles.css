@@ -1,74 +1,95 @@
 .soup-name {
-    color: #da541e;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
+  color: #da541e;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .soup-price {
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 1px;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .soup-ingredients {
-    color: black;
-    font-size: 16px;
-    letter-spacing: 0px;
+  color: black;
+  font-size: 36px;
+  letter-spacing: 0px;
 }
 
 #soupTitle {
-    font-family: Georgia;
-    font-weight: 600;
-    color: #4D4D4D;
+  font-family: Georgia;
+  font-weight: 600;
+  color: #4d4d4d;
 }
 
 .menuheader18 h1 {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-    letter-spacing: 1px;
-    color: #4D4D4D;
-    font-family: "arial narrow", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 85px;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #4d4d4d;
+  font-family: "arial narrow", sans-serif;
 }
 
 .menuheader18 p {
-    text-align: center;
-    margin: 0;
-    letter-spacing: 1px;
-    color: #48474a;
-    font-family: "arial narrow", sans-serif;
+  text-align: center;
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #48474a;
+  font-family: "arial narrow", sans-serif;
 }
- 
 
 .menuheader18 h1 span {
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 29px;
-    color: #da541e;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  color: #da541e;
 }
-#date{
-    text-align: center;
-    font-size: 16px;
-    font-weight: 200;
-    letter-spacing: 3.5px;
-    font-weight: bolder;
-    color: #48474a;
+
+#date {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 3.5px;
+  font-weight: bolder;
+  color: #48474a;
 }
 
 .body {
-    border: 1rem solid #CCCC81;
-    margin: 15px auto;
-
+  border: 1rem solid #cccc81;
+  margin: 15px auto;
 }
 
 .uk-card {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .prices {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mhfimg {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.table {
+  margin-top: 30px;
+}
+
+.prices {
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: #48474a;
+  font-family: "arial narrow", sans-serif;
 }
