@@ -27,9 +27,9 @@ var databaseUrl = "soupmenu";
 var collections = ["soups"];
 
 // Hook mongojs config to db variable
-var db = mongojs(databaseUrl, collections);
+// var db = mongojs(databaseUrl, collections);
 
-//var db = mongojs(process.env.MONGODB_URI) || mongojs(databaseUrl, collections);
+var db = mongojs(process.env.MONGODB_URI) || mongojs(databaseUrl, collections);
 
 // Log any mongojs errors to console
 db.on("error", function(error) {
