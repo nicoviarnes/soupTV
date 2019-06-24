@@ -23,7 +23,7 @@ function getResults() {
         );
         $("#soupMenu").append(
           `<tr class='data-entry' data-id=${data[i]._id}>
-            <td class="soup-name" style="padding: 30px 30px 30px 30px">${
+            <td class="soup-name" style="padding: 30px 40px 30px 40px">${
               data[i].soupItem
             }<br><p class="soup-ingredients">${data[i].soupIngredients}</p></td>
           </tr>`
