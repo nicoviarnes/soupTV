@@ -28,7 +28,7 @@ function getResults() {
             }<br><p class="soup-ingredients">${data[i].soupIngredients}</p></td>
           </tr>`
         );
-        $("#date").text(moment().format("dddd, MMM Do, YYYY"));
+        $("#date").text(moment().format("dddd, MMMM Do, YYYY"));
       }
     }
   });

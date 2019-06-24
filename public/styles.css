@@ -29,7 +29,7 @@
   text-transform: uppercase;
   margin: 0;
   margin-top: 85px;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
   letter-spacing: 2px;
   color: #4d4d4d;
@@ -45,11 +45,11 @@
   font-family: "arial narrow", sans-serif;
 }
 
-.menuheader18 h1 span {
+#oakland {
   text-transform: uppercase;
   margin: 0;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 400;
   color: #da541e;
 }
 
