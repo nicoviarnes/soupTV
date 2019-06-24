@@ -54,12 +54,18 @@
 }
 
 #date {
-  text-align: center;
+  /* text-align: center;
   font-size: 26px;
   font-weight: 400;
   letter-spacing: 3.5px;
   font-weight: bolder;
+  color: #48474a; */
+  text-align: center;
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: 1px;
   color: #48474a;
+  font-family: "arial narrow", sans-serif;
 }
 
 .body {
