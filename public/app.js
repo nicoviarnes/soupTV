@@ -8,19 +8,20 @@ function getResults() {
   $("#soupEditMenu").empty();
   $.getJSON("/soups", function(data) {
     // For each note...
-    if (data.length > 0) {
+    if (data) {
       for (var i = 0; i < data.length; i++) {
         // ...populate #results with a p-tag that includes the note's title and object id
         $("#soupEditMenu").append(
           `<tr class='data-entry' data-id=${data[i]._id}>
-            <td class="soup-name">${
+            <td><strong>${
               data[i].soupItem
-            }<br><p class="soup-ingredients">${data[i].soupIngredients}</p></td>
+            }</strong><br><p>${data[i].soupIngredients}</p></td>
             <td><button class='btn btn-danger delete' data-id='${
               data[i]._id
             }'>X</button></td>
           </tr>`
         );
+
         $("#soupMenu").append(
           `<tr class='data-entry' data-id=${data[i]._id}>
             <td class="soup-name" style="width: 33%; padding: 10px 30px 10px 30px">${
@@ -34,8 +35,32 @@ function getResults() {
   });
 }
 
+function getEdit() {
+  // Empty any results currently on the page
+  $("#soupEditMenu").empty();
+  $.getJSON("/soups", function(data) {
+    // For each note...
+    if (data) {
+      for (var i = 0; i < data.length; i++) {
+        // ...populate #results with a p-tag that includes the note's title and object id
+        $("#soupEditMenu").append(
+          `<tr class='data-entry' data-id=${data[i]._id}>
+            <td><strong>${
+              data[i].soupItem
+            }</strong><br><p>${data[i].soupIngredients}</p></td>
+            <td><button class='btn btn-danger delete' data-id='${
+              data[i]._id
+            }'>X</button></td>
+          </tr>`
+        );
+      }
+    }
+  });
+}
+
 // // Runs the getResults function as soon as the script is executed
 getResults();
+getEdit();
 
 // When the #make-new button is clicked
 $(document).on("click", "#addSoup", function() {

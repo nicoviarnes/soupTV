@@ -54,6 +54,7 @@ app.get("/soups", function(req, res) {
     } else {
       // Otherwise, send json of the notes back to user
       // This will fire off the success function of the ajax request
+      console.log(found)
       res.json(found);
     }
   });
