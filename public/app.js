@@ -13,9 +13,9 @@ function getResults() {
         // ...populate #results with a p-tag that includes the note's title and object id
         $("#soupEditMenu").append(
           `<tr class='data-entry' data-id=${data[i]._id}>
-            <td><strong>${
-              data[i].soupItem
-            }</strong><br><p>${data[i].soupIngredients}</p></td>
+            <td><strong>${data[i].soupItem}</strong><br><p>${
+            data[i].soupIngredients
+          }</p></td>
             <td><button class='btn btn-danger delete' data-id='${
               data[i]._id
             }'>X</button></td>
@@ -45,9 +45,9 @@ function getEdit() {
         // ...populate #results with a p-tag that includes the note's title and object id
         $("#soupEditMenu").append(
           `<tr class='data-entry' data-id=${data[i]._id}>
-            <td><strong>${
-              data[i].soupItem
-            }</strong><br><p>${data[i].soupIngredients}</p></td>
+            <td><strong>${data[i].soupItem}</strong><br><p>${
+            data[i].soupIngredients
+          }</p></td>
             <td><button class='btn btn-danger delete' data-id='${
               data[i]._id
             }'>X</button></td>
@@ -68,10 +68,10 @@ $(document).on("click", "#addSoup", function() {
   // This will take the data from the form and send it to the server
   console.log($("#soupItem").val(), $("#soupItem").data("ing"));
   let ingredients;
-  if($("#soupIngredients").val()) {
-    ingredients = $("#soupIngredients").val()
+  if ($("#soupIngredients").val()) {
+    ingredients = $("#soupIngredients").val();
   } else {
-    ingredients = $("#soupItem option:selected").data("ing")
+    ingredients = $("#soupItem option:selected").data("ing");
   }
   $.ajax({
     type: "POST",
@@ -100,6 +100,7 @@ $(document).on("click", "#addSoup", function() {
       $("#soupItem").val("");
       $("#soupPrice").val("");
       getResults();
+      getEdit();
     });
 });
 
@@ -115,6 +116,7 @@ $("#clear-all").on("click", function() {
       $("#soupMenu").empty();
       $("#soupEditMenu").empty();
       getResults();
+      getEdit();
     }
   });
 });
@@ -141,6 +143,7 @@ $(document).on("click", ".delete", function() {
       // Make sure the #action-button is submit (in case it's update)
       $("#action-button").html("<button id='addSoup'>Submit</button>");
       getResults();
+      getEdit();
     }
   });
 });
