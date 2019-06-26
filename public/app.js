@@ -11,16 +11,16 @@ function getResults() {
     if (data) {
       for (var i = 0; i < data.length; i++) {
         // ...populate #results with a p-tag that includes the note's title and object id
-        $("#soupEditMenu").append(
-          `<tr class='data-entry' data-id=${data[i]._id}>
-            <td><strong>${data[i].soupItem}</strong><br><p>${
-            data[i].soupIngredients
-          }</p></td>
-            <td><button class='btn btn-danger delete' data-id='${
-              data[i]._id
-            }'>X</button></td>
-          </tr>`
-        );
+        // $("#soupEditMenu").append(
+        //   `<tr class='data-entry' data-id=${data[i]._id}>
+        //     <td><strong>${data[i].soupItem}</strong><br><p>${
+        //     data[i].soupIngredients
+        //   }</p></td>
+        //     <td><button class='btn btn-danger delete' data-id='${
+        //       data[i]._id
+        //     }'>X</button></td>
+        //   </tr>`
+        // );
 
         $("#soupMenu").append(
           `<tr class='data-entry' data-id=${data[i]._id}>
