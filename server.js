@@ -61,7 +61,7 @@ app.get("/soups", function(req, res) {
 });
 
 app.get("/pandora", function(req, res) {
-  res.sendFile(path.join(__dirname + "/public/editmenu.html"));
+  res.sendFile(path.join(__dirname + "/public/editmenu-protected.html"));
 });
 
 app.get("/edit", function(req, res) {

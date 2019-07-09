@@ -4,7 +4,7 @@
   font-weight: 600;
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
-  /* text-align: center; */
+  text-align: center;
 }
 
 .soup-price {
@@ -100,4 +100,13 @@
   text-align: center;
   color: #48474a;
   font-family: "arial narrow", sans-serif;
+}
+
+#pandora-soupIngredients {
+  width: 100%;
+  height: 150px;
+}
+
+#pandora-soupItem {
+  width: 100%;
 }
