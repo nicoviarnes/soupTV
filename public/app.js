@@ -50,10 +50,10 @@ function getEdit() {
 getResults();
 getEdit();
 
-setInterval(() => {
-  console.log("getting results in 60 seconds")
-  getResults();
-}, 60000);
+// setInterval(() => {
+//   console.log("getting results in 60 seconds");
+//   getResults();
+// }, 60000);
 
 // When the #make-new button is clicked
 $(document).on("click", "#addSoup", function() {
@@ -140,3 +140,7 @@ $(document).on("click", ".delete", function() {
     }
   });
 });
+
+setInterval(function() {
+  $(".clock").html(moment().format("h:mm A"));
+}, 1000);

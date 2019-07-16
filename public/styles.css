@@ -110,3 +110,11 @@
 #pandora-soupItem {
   width: 100%;
 }
+
+.clock {
+  font-size: 60px;
+  font-weight: 600;
+  left: 40%;
+  bottom: 30px;
+  position: absolute;
+}
