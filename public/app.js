@@ -5,7 +5,7 @@
 // Loads results onto the page
 function getResults() {
   // Empty any results currently on the page
-  $("#soupEditMenu").empty();
+  $("#soupMenu").empty();
   $.getJSON("/soups", function(data) {
     // For each note...
     if (data) {
