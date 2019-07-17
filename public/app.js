@@ -17,11 +17,14 @@ function getResults() {
             }<br><p class="soup-ingredients">${data[i].soupIngredients}</p></td>
           </tr>`
         );
-        $("#date").text(moment().format("dddd, MMMM Do, YYYY"));
       }
     }
   });
 }
+
+setInterval(function() {
+  $("#date").text(moment().format("dddd, MMMM Do, YYYY"));
+}, 1000);
 
 function getEdit() {
   // Empty any results currently on the page
@@ -50,10 +53,10 @@ function getEdit() {
 getResults();
 getEdit();
 
-// setInterval(() => {
-//   console.log("getting results in 60 seconds");
-//   getResults();
-// }, 60000);
+setInterval(() => {
+  console.log("getting results in 60 seconds");
+  getResults();
+}, 60000);
 
 // When the #make-new button is clicked
 $(document).on("click", "#addSoup", function() {
