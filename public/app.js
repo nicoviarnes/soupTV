@@ -53,10 +53,12 @@ function getEdit() {
 getResults();
 getEdit();
 
+
+// Update the menu every x milliseconds
 setInterval(() => {
-  console.log("getting results in 60 seconds");
+  console.log("getting new results in 3 mins");
   getResults();
-}, 60000);
+}, 180000);
 
 // When the #make-new button is clicked
 $(document).on("click", "#addSoup", function() {
